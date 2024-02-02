@@ -1,0 +1,79 @@
+
+*{
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	margin-bottom: 10px;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.section-padding{
+	padding: 80px 0;
+}
+
+.filter-button{
+	margin-bottom: 30px;
+}
+.filter-button .button{
+	background-color: transparent;
+	border: 0;
+	position: relative;
+	padding: 5px 20px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.filter-button .button:not(.is-checked){
+	color: #ccc;
+}
+.filter-button .button + .button::before{
+	content: '';
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1.5px;
+    background-color: #000;
+    transform: skew(12deg);
+}
+
+.note-list{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.groupContainer{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #ececec;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+}
+.groupContainer .heading{
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.targetpoint a{
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+}
+.targetpoint + .targetpoint a::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	background-color: red;
+	left: -15px;
+}

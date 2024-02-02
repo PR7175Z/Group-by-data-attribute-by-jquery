@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Group By using Js</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="section-padding note-listing">
+	    <div class="container">
+	        <div class="note-filter">
+	            <div class="d-flex justify-content-between">
+	                <div class="filter-button filter-button-group">
+	                    <button class="button sortingclick is-checked" data-type="subject">Subject</button>
+	                    <button class="button sortingclick" data-type="teacher">Teacher</button>
+	                </div>
+	            </div>
+	            <div class="filter-list">
+	                <div class="note-list subject_list subject" id="sortlist">
+	                    <div class="list mb-3 card">
+	                        <h6 class="heading">Python subject</h6>
+	                        <div class="list-link pt-3">
+	                            <div class="targetpoint" data-subject="python" data-teacher="ram">
+	                                <a href="#" download>python</a>
+	                            </div>
+	                            <div class="targetpoint" data-subject="python" data-teacher="shyam">
+	                                <a href="#" download>ML</a>
+	                            </div>
+	                            <div class="targetpoint" data-subject="Engineering" data-teacher="Prasad">
+	                                <a href="#" download>Maths II</a>
+	                            </div>
+	                            <div class="targetpoint" data-subject="Engineering" data-teacher="Hari">
+	                                <a href="#" download>Maths III</a>
+	                            </div>
+	                            <span class="divider">|</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
